@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Social share image: Owl">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+    <linearGradient id="brandLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1f77d0"/>
+      <stop offset="50%" stop-color="#3cb44b"/>
+      <stop offset="100%" stop-color="#f07c22"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="rgba(0,0,0,0.25)"/>
+    </filter>
+  </defs>
+
+  <!-- Background card -->
+  <rect x="0" y="0" width="1200" height="630" rx="36" fill="#ffffff"/>
+  <rect x="6" y="6" width="1188" height="618" rx="32" fill="url(#bg)" opacity="0.06"/>
+
+  <!-- Subtle brand circuit-like line -->
+  <g opacity="0.5">
+    <path d="M50 430 H380 C470 430 520 470 590 510 C660 550 720 566 820 566 H1150"
+          fill="none" stroke="url(#brandLine)" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="110" cy="430" r="7" fill="#1f77d0"/>
+    <circle cx="220" cy="430" r="7" fill="#3cb44b"/>
+    <circle cx="330" cy="430" r="7" fill="#f07c22"/>
+    <circle cx="590" cy="510" r="7" fill="#667eea"/>
+    <circle cx="720" cy="566" r="7" fill="#764ba2"/>
+  </g>
+
+  <!-- Large owl mascot centered -->
+  <g transform="translate(170,120)" filter="url(#shadow)">
+    <!-- Body -->
+    <ellipse cx="210" cy="190" rx="165" ry="195" fill="#fff3c4" stroke="#d6b45f" stroke-width="6"/>
+    <ellipse cx="210" cy="235" rx="115" ry="120" fill="#ffe9a3"/>
+    <!-- Wings -->
+    <ellipse cx="110" cy="210" rx="55" ry="95" fill="#ffd26c"/>
+    <ellipse cx="310" cy="210" rx="55" ry="95" fill="#ffd26c"/>
+    <!-- Eyes -->
+    <circle cx="165" cy="165" r="45" fill="#fff"/><circle cx="255" cy="165" r="45" fill="#fff"/>
+    <circle cx="165" cy="165" r="18" fill="#333"/><circle cx="255" cy="165" r="18" fill="#333"/>
+    <!-- Beak -->
+    <polygon points="210,182 188,220 232,220" fill="#f07c22"/>
+    <!-- Hat -->
+    <path d="M120 130 Q210 90 300 130 L288 148 Q210 116 132 148 Z" fill="#6b7280"/>
+    <rect x="165" y="110" width="90" height="14" rx="4" fill="#525a66"/>
+    <!-- Magnifier -->
+    <circle cx="360" cy="270" r="40" fill="none" stroke="#667eea" stroke-width="10"/>
+    <rect x="385" y="295" width="52" height="14" rx="7" fill="#667eea" transform="rotate(35 411 302)"/>
+    <!-- Feet -->
+    <ellipse cx="170" cy="370" rx="25" ry="14" fill="#f07c22"/>
+    <ellipse cx="250" cy="370" rx="25" ry="14" fill="#f07c22"/>
+  </g>
+
+  <!-- Optional corner mark (remove if you prefer cleaner) -->
+  <text x="980" y="70" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#667">https://vle.CITEd.gr</text>
+</svg>

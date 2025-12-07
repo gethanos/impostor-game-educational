@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" role="img" aria-label="Owl favicon 32">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect x="0" y="0" width="32" height="32" rx="6" fill="#ffffff"/>
+  <rect x="1" y="1" width="30" height="30" rx="5" fill="url(#g1)" opacity="0.08"/>
+
+  <!-- Minimal owl head (simplified for small size) -->
+  <g transform="translate(4,4)">
+    <circle cx="12" cy="10" r="9" fill="#ffe3b3" stroke="#d6b45f" stroke-width="1.5"/>
+    <!-- Eyes -->
+    <circle cx="9" cy="9" r="3.2" fill="#fff"/>
+    <circle cx="15" cy="9" r="3.2" fill="#fff"/>
+    <circle cx="9" cy="9" r="1.5" fill="#333"/>
+    <circle cx="15" cy="9" r="1.5" fill="#333"/>
+    <!-- Beak -->
+    <polygon points="12,10.5 10.8,12 13.2,12" fill="#f07c22"/>
+    <!-- Tiny magnifier accent -->
+    <circle cx="19" cy="14" r="3" fill="none" stroke="#667eea" stroke-width="1.5"/>
+    <rect x="20.8" y="15.8" width="3.8" height="1.2" rx="0.6" fill="#667eea" transform="rotate(35 22.7 16.4)"/>
+  </g>
+</svg>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+  <title>Ποιος είναι ο Μυστικός; — Εκπαιδευτικό Παιχνίδι Κρυφού Ρόλου</title>
+  <!--
+    MIT License
+    Copyright (c) 2025 Georgalas Thanasis (info@cited.gr)
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+    THE SOFTWARE.
+  -->
+
+  <meta name="description" content="Εκπαιδευτικό παιχνίδι κρυφού ρόλου (τύπου impostor) για τάξεις και ομάδες: κατηγορίες λέξεων, μοιρασιά ρόλων, συζήτηση και ψηφοφορία. Φιλικό για σχολική χρήση, τύπου impostor." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Favicons (use owl logo exports) -->
+  <!-- Provide a 180x180 PNG generated from the owl SVG for best compatibility -->
+  <link rel="icon" href="https://vle.cited.gr/apps/impostor-game-educational/assets/img/favicon-owl-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="https://vle.cited.gr/apps/impostor-game-educational/assets/img/favicon-owl-180.png" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://vle.cited.gr/apps/impostor-game-educational/" />
+
+  <!-- Open Graph (point to your exported 1200x630 share image based on the owl) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ποιος είναι ο Μυστικός; — Εκπαιδευτικό Παιχνίδι Κρυφού Ρόλου" />
+  <meta property="og:description" content="Παιδαγωγικό παιχνίδι κρυφού ρόλου (τύπου impostor) για τάξεις: λέξεις, μοιρασιά ρόλων, τυχαία σειρά και ψηφοφορία." />
+  <meta property="og:url" content="https://vle.cited.gr/apps/impostor-game-educational/" />
+  <meta property="og:image" content="https://vle.cited.gr/apps/impostor-game-educational/assets/img/share-owl-1200x630.png" />
+  <meta property="og:image:width" content="1536" />
+  <meta property="og:image:height" content="1024" />
+  <meta property="og:site_name" content="CITEd VLE" />
+  <meta property="og:locale" content="el_GR" />
+  <meta property="fb:app_id" content="5206041659521286" />
+  <meta property="article:publisher" content="https://www.facebook.com/gethanovle" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ποιος είναι ο Μυστικός; — Εκπαιδευτικό Παιχνίδι Κρυφού Ρόλου" />
+  <meta name="twitter:description" content="Εκπαιδευτικό παιχνίδι κρυφού ρόλου (τύπου impostor) για σχολικές δραστηριότητες, με στούντιο κατηγοριών και ψηφοφορία." />
+  <meta name="twitter:image" content="https://vle.cited.gr/apps/impostor-game-educational/assets/img/share-owl-1200x630.png" />
+
+  <!-- Keywords -->
+  <meta name="keywords" content="εκπαιδευτικό παιχνίδι, κρυφός ρόλος, impostor, σχολική δραστηριότητα, τάξη, λέξεις, κατηγορίες, ψηφοφορία, classroom game, hidden role, impostor-like" />
+
+  <!-- Author -->
+  <meta name="author" content="Γεωργαλάς Αθανάσιος-Αντώνιος (Θάνος)" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalApplication",
+    "name": "Ποιος είναι ο Μυστικός;",
+    "alternateName": "Hidden Role Classroom Game (impostor-like)",
+    "url": "https://vle.cited.gr/apps/impostor-game-educational/",
+    "image": "https://vle.cited.gr/apps/impostor-game-educational/assets/img/game-logo-cartoon-owl.svg",
+    "operatingSystem": "Web",
+    "applicationCategory": "EducationalApplication",
+    "creator": {
+      "@type": "Person",
+      "name": "Γεωργαλάς Αθανάσιος-Αντώνιος (Θάνος)"
+    },
+    "description": "Εκπαιδευτικό παιχνίδι κρυφού ρόλου (τύπου impostor) για τάξεις και ομάδες. Περιλαμβάνει στούντιο κατηγοριών, βοηθητικές λέξεις, τυχαία σειρά ομιλίας και ψηφοφορία.",
+    "keywords": "εκπαίδευση, παιχνίδι, κρυφός ρόλος, σχολική δραστηριότητα, τάξη, λέξεις, κατηγορίες, classroom game, hidden role, impostor-like"
+  }
+  </script>
+
+  <link rel="stylesheet" href="https://vle.cited.gr/apps/impostor-game-educational/assets/css/main.css">
+
+</head>
+<body>
+  <!-- Removed floating home button -->
+
+  <div class="container">
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <!-- Clickable logo linking to CITEd.gr; stays visible on scroll via CSS -->
+        <a href="https://vle.cited.gr" target="_blank" rel="noopener" class="logo-link" aria-label="CITEd.gr">
+          <img src="assets/img/cited-logo.png" alt="CITEd.gr" class="brand-logo" />
+        </a>
+        <span class="top-title">Ποιος είναι ο "Μυστικός";</span>
+      </div>
+      <div class="top-bar-right">
+        <button type="button" id="scoreBtn" class="btn btn-score">📊 Βαθμολογία</button>
+        <button type="button" id="helpBtn" class="btn btn-help">❓ Βοήθεια</button>
+      </div>
+    </div>
+
+    <!-- Screen 1: Setup -->
+    <div id="screen1">
+      <div class="control-row">
+        <div class="control-head"><div class="title">Αριθμός Παικτών</div><div class="meta">Ελάχιστο 3 – Μέγιστο 20</div></div>
+        <div class="control-body">
+          <button type="button" class="stepper" id="playersMinus">−</button>
+          <input type="range" id="playerCount" min="3" max="20" value="6">
+          <button type="button" class="stepper" id="playersPlus">+</button>
+          <div class="value"><span id="playerCountValue">6</span> παίκτες</div>
+        </div>
+      </div>
+
+      <div class="control-row">
+        <div class="control-head"><div class="title">impostor(s)</div><div class="meta">Το μέγιστο προσαρμόζεται ανάλογα με τους παίκτες</div></div>
+        <div class="control-body">
+          <button type="button" class="stepper" id="impostorsMinus">−</button>
+          <input type="range" id="impostorCount" min="1" value="1">
+          <button type="button" class="stepper" id="impostorsPlus">+</button>
+          <div class="value"><span id="impostorCountValue">1</span> impostor</div>
+        </div>
+      </div>
+      <div class="hint">Μέγιστο: <span id="maximpostors">3</span> • Προτεινόμενο: <span id="suggestedimpostors">2</span></div>
+
+      <div class="toggle-section" id="namesToggle">
+        <span id="toggleIcon">▶</span> <strong>Ονόματα Παικτών (προαιρετικό)</strong>
+        <button type="button" class="btn btn-ghost btn-small" style="margin-left:auto" id="namesToggleBtn">Άνοιγμα/Κλείσιμο</button>
+      </div>
+      <div id="namesSection" class="toggle-content">
+        <p style="font-size:13px;color:#666;margin-bottom:8px;">💡 Αφήστε κενά για αυτόματα ονόματα</p>
+        <div id="playerInputs"></div>
+      </div>
+
+      <div class="toggle-section" id="studioToggle">
+        <span id="toggleStudioIcon">▶</span> <strong>✏️ Στούντιο Λέξεων & Κατηγοριών</strong>
+        <button type="button" class="btn btn-ghost btn-small" style="margin-left:auto" id="studioToggleBtn">Άνοιγμα/Κλείσιμο</button>
+      </div>
+      <div id="studio" class="toggle-content">
+        <div class="studio-header">
+          <input id="studioSearch" class="studio-search" placeholder="🔎 Αναζήτηση λέξης/κατηγορίας">
+          <div class="studio-tools">
+            <select id="groupFilter" class="group-select"><option value="">Όλες οι ομάδες</option></select>
+            <button type="button" class="btn btn-ghost btn-small" id="newCatBtn">➕ Νέα Κατηγορία</button>
+            <button type="button" class="btn btn-ghost btn-small" id="exportJsonBtn">⬇️ Εξαγωγή JSON</button>
+            <button type="button" class="btn btn-ghost btn-small" id="importJsonBtn">⬆️ Εισαγωγή JSON</button>
+            <input type="file" id="configFileInput" accept="application/json" class="hidden" />
+            <button type="button" class="btn btn-ghost btn-small" id="toggleGroupsManagerBtn">🗂️ Ομάδες (Γονικές)</button>
+          </div>
+          <div id="chipbar" class="chipbar" aria-label="Κατηγορίες"></div>
+        </div>
+
+        <div id="groupsManager" class="groups-manager hidden">
+          <div class="groups-header">
+            <div class="title">Ομάδες Κατηγοριών (γονικές)</div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <button type="button" class="btn btn-help btn-small" id="saveGroupsBtn">💾 Αποθήκευση Ομάδων</button>
+            </div>
+          </div>
+          <div id="groupsList" class="groups-list"></div>
+          <div class="new-group-row">
+            <input type="text" id="newGroupName" placeholder="Όνομα νέας ομάδας (π.χ. Αρχαία)">
+            <button type="button" class="btn btn-secondary btn-small" id="addNewGroupBtn">➕ Προσθήκη Ομάδας</button>
+          </div>
+        </div>
+
+        <div id="newCategoryForm" class="groups-manager hidden">
+          <div class="groups-header">
+            <div class="title">Νέα Κατηγορία</div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <button type="button" class="btn btn-help btn-small" id="createCatBtn">💾 Δημιουργία</button>
+              <button type="button" class="btn btn-ghost btn-small" id="cancelCatBtn">✖️ Άκυρο</button>
+            </div>
+          </div>
+          <div class="groups-list">
+            <div class="group-item">
+              <input type="text" id="newCatName" placeholder="Όνομα κατηγορίας (π.χ. Ζώα)">
+              <div class="group-meta">Όνομα</div>
+              <span></span>
+            </div>
+            <div class="group-item">
+              <select id="newCatGroup"></select>
+              <div class="group-meta">Γονική ομάδα</div>
+              <span></span>
+            </div>
+            <div class="group-item">
+              <textarea id="newCatWords" rows="4" placeholder="Προαιρετικά: Μία λέξη ανά γραμμή (μορφή «κύρια,βοηθητική»)"></textarea>
+              <div class="group-meta">Αρχικές λέξεις</div>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div id="studioCard" class="studio-card">
+          <div class="studio-title"><h3 id="studioTitle">Επιλέξτε κατηγορία</h3><div class="meta" id="studioMeta">—</div></div>
+          <div class="studio-actions">
+            <input id="catNameEdit" placeholder="Όνομα κατηγορίας" style="flex:1">
+            <select id="catGroupEdit" class="group-select"></select>
+            <button type="button" class="btn btn-ghost btn-small" id="resetCatBtn">↩️ Επαναφορά</button>
+            <button type="button" class="btn btn-danger btn-small" id="removeCatBtn">🗑️ Διαγραφή</button>
+          </div>
+          <div class="word-input" style="margin-top:8px">
+            <textarea id="wordsTextarea" placeholder="Μία λέξη ανά γραμμή. Βοηθητική: «κύρια,βοηθητική»"></textarea>
+            <div class="inline-add">
+              <input id="inlineWordInput" placeholder="Νέα λέξη (ή λέξη,βοηθητική)">
+              <button type="button" class="btn btn-secondary" id="inlineAddBtn">➕ Προσθήκη</button>
+            </div>
+          </div>
+          <div class="studio-sticky">
+            <div class="action-grid">
+              <button type="button" class="btn btn-primary" id="saveCatBtn">💾 Αποθήκευση Κατηγορίας</button>
+              <button type="button" class="btn btn-ghost" id="saveAllBtn">💾 Αποθήκευση Όλων</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <label>Κατηγορία:</label>
+      <select id="category"></select>
+
+      <div class="helper-toggle-wrapper">
+        <div class="helper-toggle-head">
+          <div class="helper-label-text">
+            <label class="switch" title="Ενεργοποίηση εμφάνισης βοηθητικής λέξης στον impostor">
+              <input type="checkbox" id="helperMode" />
+              <span class="slider"></span>
+            </label>
+            <span>Βοηθητική λέξη για τον impostor (αν υπάρχει)</span>
+          </div>
+          <div id="helperStats" class="helper-stats">—</div>
+        </div>
+        <div style="font-size:12px;color:#555;margin-top:6px">
+          Μορφή: «κύρια,βοηθητική». Παράδειγμα: Σκύλος,τετράποδο → impostor βλέπει «τετράποδο».
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-primary block" id="startBtn">🎮 Έναρξη Παιχνιδιού</button>
+    </div>
+
+    <!-- Screen 2 -->
+    <div id="screen2" class="hidden">
+      <div class="info-box">
+        <p><strong>Κατηγορία:</strong> <span id="categoryName"></span></p>
+        <p id="progress"></p>
+      </div>
+      <div id="card" class="card">
+        <div class="player-name" id="playerName"></div>
+        <div class="card-text" id="cardText">👆 Πατήστε για να δείτε</div>
+      </div>
+      <button type="button" class="btn btn-secondary block" id="nextBtn">Επόμενος →</button>
+    </div>
+
+    <!-- Order screen -->
+    <div id="screenOrder" class="hidden">
+      <h2 style="text-align:center;color:#667eea;margin-bottom:6px;font-size:20px;">🔀 Τυχαία Σειρά Παικτών</h2>
+      <p style="text-align:center;margin-bottom:10px;color:#666;font-size:13px;">Χρησιμοποιήστε τη σειρά αυτή για τη συζήτηση πριν την ψηφοφορία.</p>
+      <div class="order-wrapper"><ol id="orderList" class="order-list"></ol></div>
+      <button type="button" class="btn btn-secondary block" id="orderPrimaryBtn">🗳️ Προχώρα σε Ψηφοφορία</button>
+    </div>
+
+    <!-- Screen 3 -->
+    <div id="screen3" class="hidden">
+      <h2 style="text-align:center;color:#667eea;margin-bottom:8px;font-size:20px;">🗳️ Ψηφοφορία</h2>
+      <p style="text-align:center;margin-bottom:12px;color:#666;font-size:14px;">Ποιος είναι ο impostor;</p>
+      <div class="info-box" style="text-align:center;font-size:13px;">👆 Κάθε παίκτης κάνει 1 κλικ για να ψηφίσει</div>
+      <div style="text-align:center;margin-bottom:10px;"><button type="button" class="btn btn-ghost btn-small" id="viewOrderBtn">🔀 Προβολή Τυχαίας Σειράς</button></div>
+      <div id="votingGrid" class="voting-grid"></div>
+      <button type="button" class="btn btn-primary block" id="finishVotingBtn">✅ Υποβολή Ψηφοφορίας</button>
+    </div>
+
+    <!-- Screen 4 -->
+    <div id="screen4" class="hidden">
+      <div id="resultMessage" class="result"></div>
+      <div class="info-box">
+        <p><strong>🎯 Λέξη:</strong> <span id="revealWord"></span></p>
+        <p><strong>🕵️ impostors:</strong> <span id="revealimpostor"></span></p>
+        <p><strong>🗳️ Ψηφοφορία:</strong> <span id="voteDetails"></span></p>
+        <p id="helperInfo" style="display:none;"><strong>🧩 Βοηθητική λέξη που δόθηκε:</strong> <span id="revealHelper"></span></p>
+      </div>
+      <div style="background:#f5f5f5;padding:16px;border-radius:15px;margin:18px 0">
+        <h3 style="color:#667eea;margin-bottom:12px;font-size:16px">🏆 Βαθμολογία</h3>
+        <div id="scores"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+        <button type="button" class="btn btn-primary" id="playAgainBtn">🔄 Νέο Παιχνίδι</button>
+        <button type="button" class="btn btn-secondary" id="backSetupBtn">⚙️ Ρυθμίσεις</button>
+      </div>
+    </div>
+
+    <footer class="footer-clean">
+      <div class="footer-line"></div>
+      <div class="footer-row">
+        <div class="footer-name">
+          Γεωργαλάς Αθανάσιος-Αντώνιος (Θάνος), M.Sc., M.A., ΠΕ86 <br />
+		© <span id="year"></span> · CITEd.gr VLE — 
+          	<a href="LICENSE" target="_blank" rel="noopener" style="color: #3498db;">MIT License</a> —
+		<a href="https://vle.cited.gr/apps" target="_blank" rel="noopener">https://vle.cited.gr</a>
+
+		<script>
+  			document.getElementById('year').textContent = new Date().getFullYear();
+		</script>
+
+        </div>
+        <div class="footer-icons">
+          <a class="icon" href="https://www.facebook.com/gethanovle" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+              <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.35C0 23.407.593 24 1.325 24h11.49v-9.294H9.847v-3.62h2.968V8.413c0-2.938 1.796-4.543 4.417-4.543 1.255 0 2.334.093 2.649.135v3.07h-1.818c-1.425 0-1.701.677-1.701 1.67v2.188h3.403l-.443 3.62h-2.96V24h5.803C23.407 24 24 23.407 24 22.675V1.325C24 .593 23.407 0 22.675 0z"/>
+            </svg>
+          </a>
+          <a class="icon" href="https://www.linkedin.com/in/georgalas" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.447-2.136 2.943v5.663H9.351V9h3.414v1.561h.048c.476-.9 1.637-1.852 3.369-1.852 3.604 0 4.269 2.373 4.269 5.459v6.284zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452zM22.225 0H1.771C.792 0 0 .792 0 1.771v20.453C0 23.208.792 24 1.771 24h20.453C23.208 24 24 23.208 24 22.224V1.771C24 .792 23.208 0 22.225 0z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  <!-- HELP MODAL -->
+  <div id="helpModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-window" role="dialog" aria-modal="true">
+      <button class="modal-close" type="button" id="helpClose">Κλείσιμο ✕</button>
+
+  <!--Help Header -->
+  <div class="help-header">
+    <div class="help-icon" aria-hidden="true">❓</div>
+    <div class="help-heading">
+      <h2 class="help-title">Οδηγός: "Ποιος είναι ο 'Μυστικός';"</h2>
+      <div class="help-slogan">Εκπαιδευτικό Παιχνίδι Κρυφού Ρόλου (impostor Game)</div>
+      <div class="help-sub">Κανόνες, παραδείγματα, σύντομες συμβουλές</div>
+    </div>
+  </div>
+
+ <div class="help-body">
+        <div class="section">
+          <div class="section-header"><h3 class="section-title">Γρήγορα Βήματα</h3></div>
+          <div class="steps">
+            <div class="step"><div class="badge">1</div><div class="text"><strong>Ρυθμίσεις</strong> — Παίκτες, impostor(s), κατηγορία.</div></div>
+            <div class="step"><div class="badge">2</div><div class="text"><strong>Μοίρασμα</strong> — Πατήστε την κάρτα για να δείτε λέξη/impostor.</div></div>
+            <div class="step"><div class="badge">3</div><div class="text"><strong>Συζήτηση</strong> — Ακολουθήστε την τυχαία σειρά.</div></div>
+            <div class="step"><div class="badge">4</div><div class="text"><strong>Ψηφοφορία</strong> — Μία ψήφος ανά παίκτη.</div></div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-header"><h3 class="section-title">Κανόνες</h3></div>
+          <div class="section-content">
+            <ul>
+              <li>Αθώοι βλέπουν την <strong>κύρια λέξη</strong>.</li>
+              <li>impostor βλέπει <strong>impostor</strong> ή <em>βοηθητική</em> (αν ενεργή).</li>
+              <li>Περιγραφές: <strong>μία πρόταση</strong> (10–20s).</li>
+              <li>Μία ψήφος ανά παίκτη — προκύπτει αποτέλεσμα.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-header"><h3 class="section-title">Βοηθητικές Λέξεις</h3></div>
+          <div class="section-content">
+            <ul>
+              <li>Μορφή <code>κύρια,βοηθητική</code> (π.χ. <em>Σκύλος,τετράποδο</em>).</li>
+              <li>Με ενεργό διακόπτη, ο impostor βλέπει μόνο τη βοηθητική.</li>
+              <li>Στατιστικά βοηθητικών κάτω από τον διακόπτη.</li>
+            </ul>
+            <div class="feature"><div class="mark">💡</div><div class="desc">Κρατήστε τη βοηθητική <strong>γενική</strong> (να μη «μαρτυρά» τη λέξη).</div></div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-header"><h3 class="section-title">Στούντιο Κατηγοριών</h3></div>
+          <div class="section-content">
+            <ul>
+              <li>Επιλογή κατηγορίας μέσω <strong>chip</strong> ή <strong>αναζήτησης</strong>.</li>
+              <li>➕ Νέα Κατηγορία: δημιουργία με <strong>όνομα</strong>, <strong>γονική ομάδα</strong> και <strong>αρχικές λέξεις</strong> (προαιρετικά).</li>
+              <li>Επεξεργασία <strong>ονόματος</strong>, <strong>γονικής ομάδας</strong> και <strong>λέξεων</strong>.</li>
+              <li>Εξαγωγή/Εισαγωγή <strong>JSON</strong> για set λέξεων.</li>
+              <li>Διαχείριση γονικών: <strong>🗂️ Ομάδες (Γονικές)</strong>.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-header"><h3 class="section-title">Βαθμολογία</h3></div>
+          <div class="section-content">
+            <ul>
+              <li>Αν ο ψηφισμένος παίκτης είναι <strong>impostor</strong>: <strong>+10</strong> σε κάθε αθώο (ισχύει ακόμη κι αν υπάρχουν περισσότεροι impostors).</li>
+              <li>Αν ψηφιστεί <strong>αθώος</strong>: <strong>+20</strong> σε κάθε impostor.</li>
+              <li>Η βαθμολογία αποθηκεύεται αυτόματα (localStorage) — Διαχείριση από «📊 Βαθμολογία».</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-header"><h3 class="section-title">Συμβουλές</h3></div>
+          <div class="section-content">
+            <div class="feature"><div class="mark">⏱️</div><div class="desc">Δώστε χρόνο ομιλίας για όλους.</div></div>
+            <div class="feature"><div class="mark">🗣️</div><div class="desc">Χρησιμοποιήστε <strong>γενικές περιγραφές</strong> για ισορροπία.</div></div>
+            <div class="feature"><div class="mark">🔄</div><div class="desc">Ανανεώστε/εισαγάγετε νέες κατηγορίες συχνά.</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="help-footer">
+        <div class="shortcut"><span>Συντόμευση</span><span class="kbd">Esc</span><span>Κλείσιμο</span></div>
+        <button class="btn btn-secondary" type="button" id="helpFooterClose">Κατάλαβα</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCORES MODAL -->
+  <div id="scoresModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-window" role="dialog" aria-modal="true">
+      <button class="modal-close" type="button" id="scoresClose">Κλείσιμο ✕</button>
+      <div class="help-header"><div style="font-size:22px">🏆</div><div><h2 class="help-title">Διαχείριση Βαθμολογίας</h2><div class="help-sub">Προβολή, εξαγωγή, διαγραφή</div></div></div>
+      <div class="help-body">
+        <div class="section">
+          <div class="section-header"><h3 class="section-title">Τρέχουσα Βαθμολογία</h3></div>
+          <div id="scoresModalList" class="score-modal-list"></div>
+        </div>
+      </div>
+      <div class="help-footer">
+        <button class="btn btn-help" type="button" id="exportScoresBtn">💾 Εξαγωγή CSV</button>
+        <button class="btn btn-danger" type="button" id="clearScoresBtn">🗑️ Διαγραφή Όλων</button>
+        <button class="btn btn-secondary" type="button" id="scoresFooterClose">Κλείσιμο</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

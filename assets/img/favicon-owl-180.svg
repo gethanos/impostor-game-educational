@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" role="img" aria-label="Owl favicon 180">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.22)"/>
+    </filter>
+  </defs>
+
+  <!-- Rounded badge background -->
+  <rect x="0" y="0" width="180" height="180" rx="22" fill="#ffffff"/>
+  <rect x="4" y="4" width="172" height="172" rx="18" fill="url(#g1)" opacity="0.08"/>
+
+  <!-- Owl head (medium detail for app icon) -->
+  <g transform="translate(30,30)" filter="url(#shadow)">
+    <circle cx="60" cy="50" r="42" fill="#ffe3b3" stroke="#d6b45f" stroke-width="3"/>
+    <!-- Eyes -->
+    <circle cx="45" cy="45" r="12" fill="#fff"/><circle cx="75" cy="45" r="12" fill="#fff"/>
+    <circle cx="45" cy="45" r="5" fill="#333"/><circle cx="75" cy="45" r="5" fill="#333"/>
+    <!-- Beak -->
+    <polygon points="60,50 53,60 67,60" fill="#f07c22"/>
+    <!-- Mini detective hat -->
+    <path d="M32 34 Q60 20 88 34 L85 40 Q60 28 35 40 Z" fill="#6b7280"/>
+    <rect x="46" y="26" width="28" height="6" rx="2" fill="#525a66"/>
+    <!-- Magnifier accent -->
+    <circle cx="105" cy="68" r="12" fill="none" stroke="#667eea" stroke-width="4"/>
+    <rect x="114" y="78" width="16" height="4" rx="2" fill="#667eea" transform="rotate(35 122 80)"/>
+  </g>
+</svg>
